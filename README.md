@@ -1,6 +1,6 @@
 # PAL SNES RGB Amplifier
 
-This describes a circuit i made to improve the picture quality on PAL SNES that doesn't requre any internal mod.
+This describes a circuit I made to improve the picture quality on PAL SNES that doesn't requre any internal mod.
 
 ## Disclamier
 
@@ -23,27 +23,27 @@ My PAL "2 CHIP" SNES had petty bad RGB output and it became even worse when usin
 
 The image was dim and had ghosting. This how it initialy looked with a standard scart cable with [240P Test Suite](https://artemiourbina.itch.io/240p-test-suite) running on SNES. The images have be capture uing a home made GBS Control ([you can buy one also](https://s.click.aliexpress.com/e/_DmrSpE7)) and a [MS2130 True USB 3.0 Capture Card](https://s.click.aliexpress.com/e/_Debguux). (Be aware of cheap fake USB 2 imitaions!)
 
-<img height="500" src="images/before.png"> 
+<img src="images/before.png"> 
 
 This is the reslut using the same setup but with my circuit. I'm pretty happy with this!
 
-<img height="500" src="images/after.png">
+<img src="images/after.png">
 
 This is the model of the SNES and my design. It also have a model of astandard cabel for reference. You find the [project file here](sim/).
 
-<img height="583" src="images/schematics.png">
+<img src="images/schematics.png">
 
 The interesting parameters are Ra and Rb that sets the behaviour. I adjusted them to get about the same peak to peak voltage as the original cable. I also tried a few diffrent values on a real SNES. It seemed like the image got a huge improvement by making the impdance a bit higer seen from the SNES output (this also means lower current). The final values was determind by trial and error to get a good signal level and good image quality.
 
-<img height="500" src="images/plots.png"> 
+<img src="images/plots.png"> 
 
 I asumed that putting the buffer as close as possible to the port is benfitial so made a module that i pluggs in to the back of the console. But my guess is that it should also work pretty well if it is place in a regualar Scart cable housing with a (short) cable.
 
-<img height="500" src="images/front.jpg">
+<img src="images/front.jpg">
 
-<img height="500" src="images/back.jpg">
+<img src="images/back.jpg">
 
-<img height="500" src="images/final.jpg"> 
+<img src="images/final.jpg"> 
 
 I used surface mounted BC817 transistors but any small signal NPN transistor like BC547B, BC337 or 2N3906 should also work fine.
 
@@ -53,7 +53,7 @@ You can get the needed connectors from AliExpress:
 
 As the multi out connector provides 5 Volt on pin 10 so there is no need to use a power supply. The connections are the same as for a normal PAL Scart Cabel but with the buffers instead of the 75 ohm resistor to ground. You need three identical buffers one for each of R, G and B.
 
-<img height="500" src="images/scart.png"> 
+<img src="images/scart.png"> 
 
 
 
