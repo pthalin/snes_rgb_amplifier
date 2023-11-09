@@ -16,7 +16,7 @@ Donation using [Ko-Fi](https://ko-fi.com/patriksretrotech) or [PayPal](https://w
 
 ## Background
 
-My PAL "2 CHIP" SNES had petty bad RGB output and it became even worse when using it with a [Scart switch](https://s.click.aliexpress.com/e/_mM7z2ac) and other consoles. I knew that it's possible to make an internal RGB bypass mod, but I wanted to try to make somthing that didn't require an internal mod. I started with making a model of the output stage in LTSpice from the [schematics of the PAL SNES](docs/PAL-SNES_Schematic.pdf). I tried many diffrent circuits to make a buffer that isolates the signal and finaly came up with a farly simple design.
+My PAL "2 CHIP" SNES had petty bad RGB output and it became even worse when using it with a [Scart switch](https://s.click.aliexpress.com/e/_mM7z2ac) and other consoles. I knew that it's possible to make an internal RGB bypass mod, but I wanted to try to make somthing that didn't require an internal mod. I started with making a model of the output stage in LTSpice from the [schematics of the PAL SNES](docs/PAL-SNES_Schematic.pdf). I tried many diffrent circuits to make a buffer that isolates the signal and finaly came up with a fairly simple design.
 
 
 ## Solution
